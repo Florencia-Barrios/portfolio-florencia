@@ -9,7 +9,7 @@
     .barra {
       a img {
         //logo blanco
-        content: url("./build/img/logopro-blanco.png");
+        content: url('../img/logopro-blanco.png');
       }
       a {
         color: $turquesaClaro;
