@@ -1,0 +1,16 @@
+@import 'base/normalize';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/globales';
+@import 'base/utilidades';
+@import 'base/dark-mode';
+
+
+/** Layout **/ 
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/resumen-flor';
+@import 'layout/sobre-mi';
+@import 'layout/iconos';
+@import 'layout/proyectos-web';
+@import 'layout/contacto';

@@ -1,0 +1,153 @@
+.dark-mode {
+  background-color: $grisOscuro;
+
+  /** Header **/
+  header {
+    background-color: $grisOscuro;
+    box-shadow: 0.1rem 0.2rem 2rem $turquesa;
+
+    .barra {
+      a img {
+        //logo blanco
+        content: url("/build/img/logopro-blanco.png");
+      }
+      a {
+        color: $turquesaClaro;
+      }
+      @include tablet {
+        padding-bottom: 0;
+      }
+    }
+
+    .boton-nav {
+      &:hover {
+        color: $violeta;
+        font-weight: $bold;
+        text-shadow: 2px 2px 11px rgba(139, 10, 139, 0.5);
+      }
+    }
+
+  }
+
+  /** Resumen sobre mí **/
+  .sobre-mi {
+    h1,
+    p {
+      color: $blanco;
+    }
+    .hola {
+      color: $turquesa;
+    }
+    h2 {
+      color: $gris;
+    }
+  }
+
+  /** Sobre Mí **/
+  .informacion-flor {
+    $color1: rgb(16, 116, 113);
+    $color2: rgba(16, 116, 113, 1);
+    $color3: rgba(112, 31, 83, 1);
+    $color4: rgba(64, 32, 117, 1);
+
+    background: $color1;
+    background: -moz-linear-gradient(
+      90deg,
+      $color2 0%,
+      $color3 51%,
+      $color4 100%
+    );
+    background: -webkit-linear-gradient(
+      90deg,
+      $color2 0%,
+      $color3 51%,
+      $color4 100%
+    );
+    background: linear-gradient(90deg, $color2 0%, $color3 51%, $color4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#107471", endColorstr="#402075", GradientType=1);
+
+    .contenedor-informacion {
+      //sombrita gris
+      background-color: rgba(88, 91, 90, 0.4);
+      width: 100%;
+      padding: 2rem 1rem 2rem 1rem;
+      .texto-informacion {
+        h1 {
+          color: $turquesa;
+        }
+        p {
+          color: #d8e4e0;
+        }
+      }
+    }
+  }
+
+  /** Habilidades / Tecnologias **/
+  .iconos {
+    h4 {
+      color: $turquesa;
+    }
+  }
+
+  /** Proyectos Web **/
+  .proyectos-web {
+    $color1: rgb(16, 116, 113);
+    $color2: rgba(16, 116, 113, 1);
+    $color3: rgba(112, 31, 83, 1);
+    $color4: rgba(64, 32, 117, 1);
+
+    background: $color1;
+    background: -moz-linear-gradient(
+      90deg,
+      $color2 0%,
+      $color3 51%,
+      $color4 100%
+    );
+    background: -webkit-linear-gradient(
+      90deg,
+      $color2 0%,
+      $color3 51%,
+      $color4 100%
+    );
+    background: linear-gradient(90deg, $color2 0%, $color3 51%, $color4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#107471", endColorstr="#402075", GradientType=1);
+    padding: 2rem;
+    .contenedor-portfolios {
+      background-color: rgba(88, 91, 90, 0.4);
+      h4 {
+        color: $turquesa;
+      }
+    }
+  }
+
+  /** Footer - Copyright **/
+  footer {
+    p {
+      color: $turquesa;
+    }
+  }
+
+  /** Menu Hamburgesa **/
+  .switch {
+    position: relative;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(
+      45deg,
+      rgb(16, 116, 113) 20%,
+      rgb(64, 32, 117) 80%
+    );
+  }
+
+  /** Contáctame **/
+  .freelance {
+    .disponible,
+    .contactame {
+      h3,
+      p {
+        color: $blanco;
+      }
+    }
+  }
+}

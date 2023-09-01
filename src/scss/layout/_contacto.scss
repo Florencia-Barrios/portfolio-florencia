@@ -1,0 +1,90 @@
+@include tablet {
+  .contenedor-freelance {
+    display: grid;
+    grid-template-columns: 1.3fr 1.3fr;
+    gap: 2rem;
+    padding: 5rem 8rem;
+
+    .disponible {
+      display: flex;
+      flex-direction: column;
+      justify-content:baseline;
+    }
+  }
+}
+
+.freelance {
+  h3,
+  h4,
+  p {
+    margin: 0;
+    text-align: center;
+  }
+
+  //div 1
+  .disponible {
+    padding: 2rem;
+    h3 {
+      color: $negro;
+      font-size: 4rem;
+      font-weight: $bold;
+      line-height: 4rem;
+    }
+    p {
+      color: $grisOscuro;
+      margin: 2.5rem 3rem;
+    }
+    .letra-disponible {
+      animation: agrandar 2s infinite;
+      position: relative;
+
+      //  efecto movimiento letras
+      @keyframes agrandar {
+        0% {
+          transform: scale(1);
+          color: darken(rgb(24, 214, 152), 20);
+        }
+        50% {
+          transform: scale(1.05);
+          color: rgb(24, 214, 152);
+        }
+        100% {
+          transform: scale(1);
+          color: darken(rgb(24, 214, 152), 20);
+        }
+      }
+    }
+  }
+
+  //div 2
+  .contactame {
+    padding: 2rem;
+
+    h3 {
+      color: $negro;
+      font-weight: 500;
+      font-size: 2.5rem;
+    }
+    h4 {
+      color: $turquesa;
+      text-shadow: 4px 4px 15px $negro;
+      font-weight: $bold;
+      font-size: 5rem;
+    }
+
+    .iconos-contacto {
+      display: flex;
+      flex-direction: row;
+      justify-content:space-evenly;
+      margin: 2rem;
+      .icono-1,
+      .icono-2 {
+        width: 75px;
+        margin: 10px;
+      }
+      .icono-3 {
+        width: 95px;
+      }
+    }
+  }
+}

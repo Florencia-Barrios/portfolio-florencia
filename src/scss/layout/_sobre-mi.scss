@@ -1,0 +1,66 @@
+@include desktop {
+  .contenedor-informacion {
+    @include grid(2, 4rem);
+  }
+
+  .imagen-dibujo {
+    width: 70%;
+    overflow: hidden;
+    padding: 0;
+    picture {
+      width: 500px;
+      //   max-height: 65vh;
+    }
+  }
+}
+
+.informacion-flor {
+  padding: 2rem;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#2efef7),
+    color-stop(51%, #d53a9d),
+    to(#743ad5)
+  );
+  background-image: linear-gradient(
+    to right,
+    #2efef7 0%,
+    #d53a9d 51%,
+    #743ad5 100%
+  );
+  border-image-source: linear-gradient(45deg, #2efef7, #d53a9d);
+  border-image-outset: 1em;
+}
+
+.contenedor-informacion {
+  //sombrita gris
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  padding: 2rem 1rem 2rem 1rem;
+}
+
+.texto-informacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-weight: $bold;
+    color: $negro;
+  }
+
+  p {
+    color: $grisOscuro;
+  }
+}
+
+.imagen-dibujo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 5rem 2rem 5rem;
+}

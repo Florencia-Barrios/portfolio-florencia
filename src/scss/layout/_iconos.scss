@@ -1,0 +1,31 @@
+.contenedor-iconos {
+  @include grid(2, 3rem);
+  place-items: center;
+  text-align: center;
+
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  @include desktopXL{
+    .icono {
+      margin-right: 2rem;
+    }
+  }
+}
+.iconos {
+  text-align: center;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  h4 {
+    font-size: 4rem;
+    color: $violetaOscuro;
+  }
+
+  .icono {
+    width: 100px;
+  }
+}
