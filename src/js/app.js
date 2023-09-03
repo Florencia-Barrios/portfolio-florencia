@@ -73,3 +73,13 @@ function scrollNav(){
   });
 }
 
+// Titulo de pagina web
+let docTitle = document.title;
+window.addEventListener("blur", () => {
+  document.title = "Que tengas lindo día :)";
+});
+
+window.addEventListener("focus", () => {
+  document.title = docTitle;
+});
+
