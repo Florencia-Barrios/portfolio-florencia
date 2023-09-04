@@ -9,7 +9,7 @@
     .barra {
       a img {
         //logo blanco
-        content: url('../img/logopro-blanco.png');
+        content: url("../img/logopro-blanco.png");
       }
       a {
         color: $turquesaClaro;
@@ -26,7 +26,6 @@
         text-shadow: 2px 2px 11px rgba(139, 10, 139, 0.5);
       }
     }
-
   }
 
   /** Resumen sobre mí **/
@@ -150,4 +149,35 @@
       }
     }
   }
-}
+
+  // Proyectos nº2
+  .web-2 {
+    h2 {
+      color: $turquesa;
+      font-weight: $bold;
+      text-shadow: 3px 3px 35px $gris;
+    }
+    .carta {
+      .content {
+        .front,
+        .back {
+          background-color: #151515;
+          .description {
+            box-shadow: 0px 0px 10px 5px #00000088;
+            background-color: #00000099;
+          }
+        }
+        .back-content {
+          background-color: #151515;
+        }
+      }
+    }
+
+    // boton
+    .btn {
+      &::after {
+        background-color: rgb(46, 46, 46);
+      }
+    }
+  }
+} // fin dark mode

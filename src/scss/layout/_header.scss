@@ -13,6 +13,7 @@
       left: 0;
       top: 0;
       width: 100%;
+      z-index: 1000; // para que no se superpongan las card
     }
   }
 }
