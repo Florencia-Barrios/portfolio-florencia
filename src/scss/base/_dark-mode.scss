@@ -29,16 +29,24 @@
   }
 
   /** Resumen sobre mí **/
-  .sobre-mi {
-    h1,
-    p {
-      color: $blanco;
+  .resumen-flor {
+    .imagen-flor {
+      img {
+        content: url(../../../build/img/imagen-perfil-2.png);
+      }
     }
-    .hola {
-      color: $turquesa;
-    }
-    h2 {
-      color: $gris;
+
+    .sobre-mi {
+      h1,
+      p {
+        color: $blanco;
+      }
+      .hola {
+        color: $turquesa;
+      }
+      h2 {
+        color: $gris;
+      }
     }
   }
 
@@ -177,6 +185,59 @@
     .btn {
       &::after {
         background-color: rgb(46, 46, 46);
+      }
+    }
+  }
+
+  /** 3º prueba proyecto web **/
+
+  .swiper-contenedor {
+    h3 {
+      color: $turquesa;
+      font-weight: $bold;
+      text-shadow: 3px 3px 35px $gris;
+    }
+    .swiper {
+      .swiper-button-prev,
+      .swiper-button-next {
+        color: $turquesa;
+      }
+    }
+  }
+
+  /** 4° prueba proyectos **/
+  .web-4 {
+    h2 {
+      color: $turquesa;
+      text-shadow: 2px 4px 7px $violeta;
+    }
+    .contenedor-web-4 {
+      .porfolios-web-4 {
+        .informacion-web-4 {
+          background-color: $grisOscuro;
+
+          h3,
+          .web-tecno {
+            color: $turquesa;
+          }
+          p {
+            color: $gris;
+          }
+
+          .button {
+            background-color: $grisOscuro;
+            border: 2px solid $turquesa;
+            .boton-web {
+              color: $blanco;
+            }
+          }
+          .button:hover {
+            background-color: $turquesa;
+            .boton-web {
+              color: $negro;
+            }
+          }
+        }
       }
     }
   }
