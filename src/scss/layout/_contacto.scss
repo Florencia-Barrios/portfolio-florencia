@@ -1,19 +1,8 @@
-@include tablet {
-  .contenedor-freelance {
-    display: grid;
-    grid-template-columns: 1.3fr 1.3fr;
-    gap: 2rem;
-    padding: 5rem 8rem;
-
-    .disponible {
-      display: flex;
-      flex-direction: column;
-      justify-content:baseline;
-    }
-  }
-}
-
 .freelance {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   h3,
   h4,
   p {
@@ -21,22 +10,44 @@
     text-align: center;
   }
 
+  .contenedor-freelance {
+    min-width: 50vw;
+    display: grid;
+    place-items: center;
+
+    @include tablet {
+      width: 70vw;
+      display: grid;
+      grid-template-columns: 1.3fr 1.3fr;
+      place-items: center;
+      gap: 2rem;
+      margin: 5rem;
+    }
+  }
+
   //div 1
   .disponible {
-    padding: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
     h3 {
       color: $negro;
-      font-size: 4rem;
+      font-size: 3.7rem;
       font-weight: $bold;
       line-height: 4rem;
     }
     p {
       color: $grisOscuro;
-      margin: 2.5rem 3rem;
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+      margin-top: 2rem;
     }
     .letra-disponible {
       animation: agrandar 2s infinite;
       position: relative;
+      font-size: 5rem;
 
       //  efecto movimiento letras
       @keyframes agrandar {
@@ -58,32 +69,34 @@
 
   //div 2
   .contactame {
-    padding: 2rem;
-
     h3 {
       color: $negro;
       font-weight: 500;
       font-size: 2.5rem;
+      margin-top: 1rem;
     }
     h4 {
-      color: $turquesa;
-      text-shadow: 4px 4px 15px $negro;
+      color: $rosa;
+      text-shadow: 2px 2px 3px $negro;
       font-weight: $bold;
-      font-size: 5rem;
+      font-size: 4.5rem;
     }
 
     .iconos-contacto {
       display: flex;
       flex-direction: row;
-      justify-content:space-evenly;
-      margin: 2rem;
-      .icono-1,
+      justify-content: space-around;
+      align-items: center;
+      margin: 1.5rem;
+      .icono-1 {
+        width: 65px;
+        margin: 8px;
+      }
       .icono-2 {
-        width: 75px;
-        margin: 10px;
+        width: 69px;
       }
       .icono-3 {
-        width: 95px;
+        width: 70px;
       }
     }
   }

@@ -1,5 +1,6 @@
 .resumen-flor {
-  padding: 0 2rem 0 2rem;
+  // padding: 0 2rem 0 2rem;
+  width: 85%;
 
   h1,
   .hola,
@@ -28,18 +29,22 @@
     font-size: 2.2rem;
   }
 
-  @include tablet {
+  @include desktop {
     @include grid(2, 2rem);
   }
 }
 
 .imagen-flor {
+  picture {
+    display: flex;
+    justify-content: center;
+  }
   img {
-    min-width: 100%;
+    width: 70vw;
     height: auto;
   }
 
-  @include tablet {
+  @include desktop {
     img {
       width: 550px;
       height: 550px;
@@ -47,8 +52,9 @@
   }
 }
 
-@include tablet {
-  .sobre-mi {
+.sobre-mi {
+  margin-bottom: 4rem;
+  @include desktop {
     padding: 2rem 0 0 0;
     display: flex;
     flex-direction: column;
@@ -56,50 +62,49 @@
   }
 }
 
-
-.sobre-mi{
-    margin-bottom: 4rem;
-}
-
 // 2do boton
 .btn-space {
-    padding: 15px 45px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 500% auto;
+  width: 280px;
+  padding: 15px 45px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 500% auto;
+  border-radius: 10px;
+  margin-top: 2rem;
+  cursor: pointer;
+
+  &:hover {
+    background-position: right center;
+    border-image-source: linear-gradient(90deg, #d53a9d, #743ad5);
+    box-shadow: 0 0 20px #743ad5;
+    text-shadow: 1px 1px 10px #d53a9d;
+  }
+  a {
+    color: rgba(255, 255, 255, 0.8);
     font-weight: bold;
     font-size: 2rem;
-    color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    margin-top: 2rem;
-
-  
+    text-align: center;
     &:hover {
-      background-position: right center;
-      border-image-source: linear-gradient(90deg, #d53a9d, #743ad5);
-      box-shadow: 0 0 20px #743ad5;
       color: rgb(255, 255, 255);
-      text-shadow: 1px 1px 10px #d53a9d;
     }
   }
-  
-  .space {
-    background-image: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(#743ad5),
-      color-stop(51%, #d53a9d),
-      to(#743ad5)
-    );
-    background-image: linear-gradient(
-      to right,
-      #743ad5 0%,
-      #d53a9d 51%,
-      #743ad5 100%
-    );
-    border-image-source: linear-gradient(45deg, #743ad5, #d53a9d);
-    border-image-outset: 1em;
-  }
-  
+}
+
+.space {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#743ad5),
+    color-stop(51%, #d53a9d),
+    to(#743ad5)
+  );
+  background-image: linear-gradient(
+    to right,
+    #743ad5 0%,
+    #d53a9d 51%,
+    #743ad5 100%
+  );
+  border-image-source: linear-gradient(45deg, #743ad5, #d53a9d);
+  border-image-outset: 1em;
+}

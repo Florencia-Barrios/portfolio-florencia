@@ -225,7 +225,8 @@ body {
   .check {
     --size: 28px;
     position: relative;
-    background: linear-gradient(90deg, #f19af3, #f099b5);
+    // background: linear-gradient(90deg, #f19af3, #f099b5); Origianal
+    background: linear-gradient(90deg, #9F44D3, #2EFEF7);
     line-height: 0;
     perspective: 400px;
     font-size: var(--size);
@@ -247,7 +248,8 @@ body {
     label {
       width: calc(2.2 * var(--size));
       height: var(--size);
-      background: #d7d7d7;
+      // background: #d7d7d7; Original
+      background: linear-gradient(90deg, #9F44D3, #F781F3);
       overflow: hidden;
     }
 

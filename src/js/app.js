@@ -4,19 +4,27 @@ document.addEventListener("DOMContentLoaded", function () {
   navegacionFija();
   scrollNav();
   swiper();
-
 });
 
+// 3º prueba de proyecto web
 function swiper() {
-  const swiper = new Swiper(".swiper", {
+  const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: "horizontal",
     loop: true,
     allowTouchMove: true,
     effect: "fade",
     autoplay: {
-      delay: 4000,
+      delay: 2000,
       pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+    },
+
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
     },
 
     // Navigation arrows
@@ -24,8 +32,15 @@ function swiper() {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+
+    // // And if we need scrollbar
+    // scrollbar: {
+    //   el: ".swiper-scrollbar",
+    //   draggable: true,
+    // },
   });
 }
+
 // Boton DARK-MODE
 function darkMode() {
   const prefiereDarkMode = window.matchMedia("(prefers-color-scheme: dark)");
@@ -131,6 +146,5 @@ window.addEventListener("focus", () => {
 //     // },
 //   });
 // }
-
 
 

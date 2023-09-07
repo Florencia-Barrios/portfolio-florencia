@@ -47,6 +47,32 @@
       h2 {
         color: $gris;
       }
+
+      .btn-space {
+        &:hover {
+          border-image-source: linear-gradient(90deg, #2efef7, #743ad5);
+          box-shadow: 0 0 20px #743ad5;
+          text-shadow: 1px 1px 10px #2eb4b5;
+        }
+      }
+      .space {
+        background-image: -webkit-gradient(
+          linear,
+          left top,
+          right top,
+          from(#743ad5),
+          color-stop(51%, #2efef7),
+          to(#743ad5)
+        );
+        background-image: linear-gradient(
+          to right,
+          #743ad5 0%,
+          #2efef7 51%,
+          #743ad5 100%
+        );
+        border-image-source: linear-gradient(45deg, #743ad5, #2efef7);
+        border-image-outset: 1em;
+      }
     }
   }
 
@@ -155,6 +181,13 @@
       p {
         color: $blanco;
       }
+    }
+    .contactame {
+      h4 {
+        color: $turquesa;
+        text-shadow: 3px 3px 4px $violeta;
+      }
+     
     }
   }
 
