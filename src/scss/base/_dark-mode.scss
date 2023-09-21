@@ -29,12 +29,17 @@
   }
 
   /** Resumen sobre mí **/
-  .resumen-flor {
-    .imagen-flor {
-      .flor {
-        content: url(../../../build/img/imagen-perfil-1.png);
-      }
+  .imagen-flor {
+    img {
+      content: url(../../../build/img/imagen-perfil-1.png);
     }
+  }
+  .resumen-flor {
+    // .imagen-flor {
+    //   img {
+    //     content: url(../../../build/img/imagen-perfil-1.png);
+    //   }
+    // }
 
     .sobre-mi {
       h1,
