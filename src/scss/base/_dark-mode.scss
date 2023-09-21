@@ -31,9 +31,11 @@
   /** Resumen sobre mí **/
   .resumen-flor {
     // .imagen-flor {
+    picture {
       img {
         content: url(../../../build/img/imagen-perfil-1.png);
       }
+    }
     // }
 
     .sobre-mi {
@@ -187,7 +189,6 @@
         color: $turquesa;
         text-shadow: 3px 3px 4px $violeta;
       }
-     
     }
   }
 
