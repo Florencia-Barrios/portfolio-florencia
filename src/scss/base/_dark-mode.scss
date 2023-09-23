@@ -273,4 +273,23 @@
       }
     }
   }
+
+  /* 5º prueba de muestra de proyectos   */
+  .quinta-muestra {
+    h2 {
+      color: $turquesa;
+      text-shadow: 2px 4px 7px $violeta;
+    }
+    .galeria-proyecto-2 {
+      .info-2 {
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+      }
+      .btn-2 {
+        &::after {
+          background-color: $negro;
+        }
+      }
+    }
+  }
 } // fin dark mode

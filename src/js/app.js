@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   navegacionFija();
   scrollNav();
   swiper();
+
 });
 
 // 3º prueba de proyecto web
@@ -50,13 +51,13 @@ function darkMode() {
     document.body.classList.remove("dark-mode");
   }
 
-  // prefiereDarkMode.eventListeners('change', function(){
-  //   if(prefiereDarkMode.matches) {
-  //     document.body.classList.add("dark-mode");
-  //   } else{
-  //     document.body.classList.remove("dark-mode");
-  //   }
-  // });
+  prefiereDarkMode.addEventListener('change', function(){
+    if(prefiereDarkMode.matches) {
+      document.body.classList.add("dark-mode");
+    } else{
+      document.body.classList.remove("dark-mode");
+    }
+  });
 
   const botonDarkMode = document.querySelector(".dark-mode-boton");
   botonDarkMode.addEventListener("click", function () {
@@ -116,35 +117,8 @@ window.addEventListener("focus", () => {
   document.title = docTitle;
 });
 
-// 3º prueba de proyecto web
-// function swiper() {
-//   const swiper = new swiper(".swiper", {
-//     // Optional parameters
-//     direction: "horizontal",
-//     loop: true,
-//     allowTouchMove: true,
-//     effect: "fade",
-//     autoplay: {
-//       delay: 3000,
-//       pauseOnMouseEnter: true,
-//     },
 
-//     // If we need pagination
-//     // pagination: {
-//     //     el: '.swiper-pagination',
-//     // },
 
-//     // Navigation arrows
-//     navigation: {
-//       nextEl: ".swiper-button-next",
-//       prevEl: ".swiper-button-prev",
-//     },
 
-//     // And if we need scrollbar
-//     // scrollbar: {
-//     //     el: '.swiper-scrollbar',
-//     // },
-//   });
-// }
 
 

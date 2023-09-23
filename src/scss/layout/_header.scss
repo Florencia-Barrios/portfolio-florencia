@@ -30,7 +30,6 @@ body {
 // fin header fijo
 
 .barra {
-  // padding-bottom: 1.5rem;
   width: auto;
   display: flex;
   flex-direction: column;
@@ -71,7 +70,7 @@ body {
     &:hover {
       color: $celeste;
       font-weight: $bold;
-      text-shadow: 2px 2px 11px rgba(139, 10, 139, 0.5);
+      // text-shadow: 2px 2px 11px rgba(139, 10, 139, 0.5);
     }
   }
 

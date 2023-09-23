@@ -109,10 +109,6 @@
   }
 }
 
-// .carta {
-//   overflow: visible;
-//   width: 230px;
-//   height: 294px;
 .carta {
   overflow: visible;
   width: 400px;
@@ -121,7 +117,7 @@
   .content {
     width: 100%;
     height: 100%;
-    transform-style:preserve-3d;
+    transform-style: preserve-3d;
     transition: transform 300ms;
     box-shadow: 0px 0px 10px 1px #000000ee;
     border-radius: 5px;
@@ -257,11 +253,11 @@
         font-size: 1.8rem;
         font-weight: $bold;
       }
-    
+
       .iconos-proyecto {
         display: flex;
         flex-direction: row;
-        justify-content:flex-start;
+        justify-content: flex-start;
         gap: 1rem;
         margin-top: 1.2rem;
         // margin-top: 1rem;
@@ -272,8 +268,6 @@
       }
     }
   }
-
- 
 
   .front .img {
     position: absolute;
@@ -447,7 +441,7 @@
 /** Prueba 4° proyecto web **/
 
 .web-4 {
-  h2{
+  h2 {
     color: $violeta;
     text-shadow: 2px 4px 7px $turquesa;
     font-weight: $bold;
@@ -462,7 +456,7 @@
     /* Estilos base para cada proyecto */
     .porfolios-web-4 {
       position: relative;
-      width: 600px; /* Ajusta el tamaño según tus necesidades */
+      width: 600px;
       height: 300px;
       margin: 10px;
       overflow: hidden;
@@ -475,9 +469,9 @@
         position: absolute;
         top: 0;
         left: 0;
-        background-color: $blanco; 
+        background-color: $blanco;
         padding: 10px;
-        display: none; 
+        display: none;
         width: 100%;
         height: 100%;
         transition: opacity 1s;
@@ -514,7 +508,7 @@
           }
         }
 
-        .button{
+        .button {
           width: 80px;
           height: 40px;
           margin-top: 1rem;
@@ -522,28 +516,215 @@
           border: 2px solid $violeta;
           border-radius: 2px;
           text-align: center;
-          
+
           .boton-web {
             color: $grisOscuro;
             border: none;
             font-size: 1.5rem;
-          }       
+          }
         }
-        .button:hover{
+        .button:hover {
           background-color: $violeta;
-          .boton-web{
+          .boton-web {
             color: $blanco;
           }
         }
       }
     }
 
-    /* Al pasar el mouse por encima, muestra la información */
     .porfolios-web-4:hover .informacion-web-4 {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
+    }
+  }
+}
+
+// 5º prueba proyecto web GALERIA
+.quinta-muestra {
+  display: none;
+  @include desktop {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    h2 {
+      color: $violeta;
+      text-shadow: 2px 4px 7px $turquesa;
+      font-weight: $bold;
+      font-size: 5rem;
+    }
+    .galeria-proyecto-2 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      // width: 150px;
+      height: 350px;
+      padding: 2rem;
+    }
+
+    .proyecto-img-2 {
+      position: relative;
+    }
+
+    .proyecto-img-2 img {
+      height: 350px;
+      width: 200px;
+      object-fit: cover;
+      filter: brightness(80%);
+      transition: 0.7s ease;
+    }
+
+    .proyecto-img-2:hover img {
+      width: 550px;
+      opacity: 1;
+      filter: brightness(100%);
+    }
+
+    .info-2 {
+      display: none;
+      position: absolute;
+      margin-right: 1rem;
+      top: 50%;
+      right: 0;
+      background-color: rgba(51, 51, 51, 0.8);
+      border-radius: 10px;
+      color: white;
+      padding: 1rem;
+      transform: translateY(-50%);
+    }
+
+    .proyecto-img-2:hover .info-2 {
+      display: flex;
+      flex-direction: column;
+      width: 350px;
+      height: 265px;
+      .contenedor-tecno {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      h3 {
+        font-weight: 600;
+        color: $blanco;
+        margin: 0;
+        font-size: 2.8rem;
+      }
+      p {
+        color: $blanco;
+        margin: 0;
+        font-size: 1.5rem;
+        font-weight: $delgada;
+        line-height: 2rem;
+      }
+      .web-tecno-2 {
+        color: $turquesa;
+        font-weight: 600;
+        font-size: 2rem;
+        margin: 1.5rem 0;
+      }
+      .iconos-proyecto-2 {
+        display: flex;
+        justify-content: flex-start;
+        gap: 2rem;
+        .icono-proyecto-2 {
+          width: 40px;
+          height: auto;
+        }
+      }
+    }
+    //ver mas boton
+    .btn-2 {
+      margin: 1.2rem;
+      // padding: 0.28em 1em;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      width: 90px;
+      height: 30px;
+      position: relative;
+      z-index: 0;
+      border-radius: 12px;
+
+      a {
+        color: #fff;
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 15px;
+      }
+
+      &::after {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: $grisOscuro;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+      }
+
+      // glow
+      &::before {
+        content: "";
+        background: linear-gradient(
+          45deg,
+          $violeta,
+          $turquesa,
+          $rosa,
+          $turquesaClaro,
+          $violetaOscuro,
+          $turquesaClaro,
+          $rosa,
+          $turquesa
+        );
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 600%;
+        z-index: -1;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        filter: blur(8px);
+        animation: glowing 20s linear infinite;
+        transition: opacity 0.6s ease-in-out;
+        border-radius: 10px;
+        opacity: 0;
+      }
+
+      @keyframes glowing {
+        0% {
+          background-position: 0 0;
+        }
+
+        50% {
+          background-position: 400% 0;
+        }
+
+        100% {
+          background-position: 0 0;
+        }
+      }
+
+      // hover
+      &:hover::before {
+        opacity: 1;
+      }
+
+      &:active:after {
+        background: transparent;
+      }
+
+      &:active {
+        color: #000;
+        font-weight: bold;
+      }
     }
   }
 }
