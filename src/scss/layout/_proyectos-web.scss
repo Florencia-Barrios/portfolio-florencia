@@ -132,7 +132,31 @@
       -webkit-backface-visibility: hidden;
       border-radius: 5px;
       overflow: hidden;
-    }
+
+      .front, // prueba para safari
+      .back {
+        backface-visibility: hidden;
+        .front-content {
+          opacity: 0;
+          visibility: hidden;
+        }
+        &:hover {
+          .content {
+            transform: rotateY(180deg);
+
+            .back {
+              opacity: 0;
+              visibility: hidden;
+            }
+
+            .front {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+        }
+      }
+    }  // fin prueba para safari
 
     .back {
       width: 100%;
