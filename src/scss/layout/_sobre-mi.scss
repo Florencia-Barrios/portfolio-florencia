@@ -3,13 +3,23 @@
     @include grid(2, 4rem);
   }
 
+  // .imagen-dibujo {
+  //   width: 70%;
+  //   overflow: hidden;
+  //   padding: 0;
+  //   picture {
+  //     width: 500px;
+  //   }
+  // }
+}
+
+@include tablet {
   .imagen-dibujo {
     width: 70%;
     overflow: hidden;
     padding: 0;
     picture {
       width: 500px;
-      //   max-height: 65vh;
     }
   }
 }
@@ -39,6 +49,7 @@
   background-color: rgba(255, 255, 255, 0.3);
   width: 100%;
   padding: 2rem 1rem 2rem 1rem;
+
 }
 
 .texto-informacion {
@@ -49,10 +60,12 @@
   h1 {
     font-weight: $bold;
     color: $negro;
+    margin: 0rem;
   }
 
   p {
     color: $grisOscuro;
+    margin: 0.8rem;
   }
 }
 
@@ -62,5 +75,8 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 2rem 5rem 2rem 5rem;
+  padding: 2rem 4rem 2rem 4rem;
+  @include desktop {
+    padding: 0rem;
+  }
 }
