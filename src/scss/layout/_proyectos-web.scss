@@ -512,7 +512,6 @@
           font-family: $fuente_principal;
         }
         .parrafo-web-4 {
-         
           margin: 0;
           padding: 0 1rem;
           font-size: 1.5rem;
@@ -522,7 +521,7 @@
         @include tablet {
           .parrafo-web-4{
             width: 75%;
-            padding: 0 4rem;
+            padding: 0;
           }
         }
         .web-tecno {
