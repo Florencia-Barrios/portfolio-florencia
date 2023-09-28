@@ -25,6 +25,10 @@
 }
 
 .informacion-flor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 2rem;
   background-image: -webkit-gradient(
     linear,
@@ -42,15 +46,19 @@
   );
   border-image-source: linear-gradient(45deg, #2efef7, #d53a9d);
   border-image-outset: 1em;
+
+  .contenedor-informacion {
+    //sombrita gris
+    background-color: rgba(255, 255, 255, 0.3);
+    // width: 100%;
+    max-width: 1400px;
+    padding: 2rem 1rem 2rem 1rem;
+  
+  }
 }
 
-.contenedor-informacion {
-  //sombrita gris
-  background-color: rgba(255, 255, 255, 0.3);
-  width: 100%;
-  padding: 2rem 1rem 2rem 1rem;
 
-}
+
 
 .texto-informacion {
   display: flex;
