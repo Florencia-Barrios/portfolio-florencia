@@ -543,23 +543,27 @@
   }
 }
 
-// @include desktopXL {
-//   .web-4 {
-//     width: 1200px;
-//     .contenedor-web-4 {
-//       display: grid;
-//       grid-template-columns: repeat(2, 1fr);  // Dos columnas
-//       gap: 20px;  // Espacio entre elementos
-//       justify-items: center;  // Centrar en el eje principal
-//       align-items: center;    // Centrar en el eje secundario
-  
-//       .porfolios-web-4 {
-//         width: 100%;  // Ancho al 100% para ocupar toda la celda
-//         overflow: hidden;
-//     }
-//   }
-// }
-// }
+@include desktopXL {
+  .web-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .contenedor-web-4 {
+      width: 1200px;
+      display: grid;
+      @include grid(2, 2rem);
+      justify-items: center;
+      align-items: center;
+
+      .porfolios-web-4 {
+        width: 100%;
+        overflow: hidden;
+        margin: 0;
+      }
+    }
+  }
+}
 
 // 5º prueba proyecto web GALERIA
 .quinta-muestra {
