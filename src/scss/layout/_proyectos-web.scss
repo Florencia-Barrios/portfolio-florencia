@@ -512,18 +512,24 @@
           font-family: $fuente_principal;
         }
         .parrafo-web-4 {
-          width: 75%;
+         
           margin: 0;
-          padding: 0 4rem;
+          padding: 0 1rem;
           font-size: 1.5rem;
           color: $grisOscuro;
           font-weight: $delgada;
+        }
+        @include tablet {
+          .parrafo-web-4{
+            width: 75%;
+            padding: 0 4rem;
+          }
         }
         .web-tecno {
           color: $violeta;
           font-size: 1.9rem;
           font-weight: 600;
-          margin-bottom: 1rem;
+          margin:  0 0 0 0;
         }
         .iconos-proyecto {
           display: flex;
