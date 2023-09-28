@@ -14,14 +14,16 @@
     min-width: 50vw;
     display: grid;
     place-items: center;
+    margin-top: 4rem;
 
     @include tablet {
-      width: 70vw;
+      // width: 70vw;
+      max-width: 900px;
       display: grid;
-      grid-template-columns: 1.3fr 1.3fr;
+      grid-template-columns: 1.2fr 0.8fr;
       place-items: center;
       gap: 2rem;
-      margin: 5rem;
+      margin: 4rem 0 2rem 0;
     }
   }
 
@@ -31,6 +33,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
 
     h3 {
       color: $negro;
@@ -39,6 +42,8 @@
       line-height: 4rem;
     }
     p {
+      width: 80%;
+      text-align: center;
       color: $grisOscuro;
       font-size: 1.8rem;
       line-height: 2.5rem;
@@ -65,10 +70,14 @@
         }
       }
     }
+
+    @include desktop {
+    }
   }
 
   //div 2
   .contactame {
+    // max-width: 300px; //
     h3 {
       color: $negro;
       font-weight: 500;
