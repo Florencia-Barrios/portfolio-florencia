@@ -101,14 +101,14 @@
 
   .hover .front {
     transform: rotateY(0deg);
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
+    visibility: visible;
   }
 
   .hover .back {
     transform: rotateY(180deg);
-    opacity: 1;
-    visibility: visible;
+    opacity: 0;
+    visibility: hidden;
   }
 }
 .web-2 {
