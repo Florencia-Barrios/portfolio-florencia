@@ -94,7 +94,6 @@
 // 2da parte de muestra proyectos
 
 // prueba safari
-
 .web-2 {
   padding: 2rem;
 
@@ -139,8 +138,6 @@
     }
 
     .back {
-      width: 100%;
-      height: 100%;
       justify-content: center;
       display: flex;
       align-items: center;
@@ -194,6 +191,10 @@
     .content {
       transform: rotateY(180deg);
     }
+
+    .back .back-content img {
+      display: none; /* Oculta la imagen al hacer hover */
+    }
   }
 
   @keyframes rotation_481 {
@@ -209,10 +210,6 @@
   .front {
     transform: rotateY(180deg);
     color: white;
-
-    &:hover{
-      backface-visibility: visible;
-    }
 
     .front-content {
       position: absolute;
@@ -248,7 +245,7 @@
 
         p {
           width: 100%;
-          color: $gris;
+          color: $blanco;
           font-size: 1.3rem;
           font-weight: 300;
           margin: 0;
@@ -267,6 +264,7 @@
         flex-direction: row;
         justify-content: flex-start;
         gap: 1rem;
+        margin-top: 1.2rem;
 
         .icono-proyecto {
           width: 40px;
@@ -327,91 +325,6 @@
   }
 }
 
-.btn {
-  margin-top: 1.2rem;
-  padding: 0.28em 1em;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  width: 100px;
-  height: 35px;
-  position: relative;
-  z-index: 0;
-  border-radius: 12px;
-
-  a {
-    color: #fff;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 17px;
-  }
-
-  &::after {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: $violetaOscuro;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-  }
-
-  &::before {
-    content: "";
-    background: linear-gradient(
-      45deg,
-      $violeta,
-      $turquesa,
-      $rosa,
-      $turquesaClaro,
-      $violetaOscuro,
-      $turquesaClaro,
-      $rosa,
-      $turquesa
-    );
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    background-size: 600%;
-    z-index: -1;
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    filter: blur(8px);
-    animation: glowing 20s linear infinite;
-    transition: opacity 0.3s ease-in-out;
-    border-radius: 10px;
-    opacity: 0;
-  }
-
-  @keyframes glowing {
-    0% {
-      background-position: 0 0;
-    }
-
-    50% {
-      background-position: 400% 0;
-    }
-
-    100% {
-      background-position: 0 0;
-    }
-  }
-
-  &:hover::before {
-    opacity: 1;
-  }
-
-  &:active:after {
-    background: transparent;
-  }
-
-  &:active {
-    color: #000;
-    font-weight: bold;
-  }
-}
 // fin prueba safari
 
 // .web-2 {
@@ -640,94 +553,94 @@
 //   }
 // }
 
-// // boton ver mas
-// .btn {
-//   margin-top: 1.2rem;
-//   padding: 0.28em 1em;
-//   border: none;
-//   outline: none;
-//   cursor: pointer;
-//   width: 100px;
-//   height: 35px;
-//   position: relative;
-//   z-index: 0;
-//   border-radius: 12px;
+// boton ver mas
+.btn {
+  margin-top: 1.2rem;
+  padding: 0.28em 1em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100px;
+  height: 35px;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px;
 
-//   a {
-//     color: #fff;
-//     font-family: inherit;
-//     font-weight: 500;
-//     font-size: 17px;
-//   }
+  a {
+    color: #fff;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+  }
 
-//   &::after {
-//     content: "";
-//     z-index: -1;
-//     position: absolute;
-//     width: 100%;
-//     height: 100%;
-//     background-color: $violetaOscuro;
-//     left: 0;
-//     top: 0;
-//     border-radius: 10px;
-//   }
+  &::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $violetaOscuro;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
 
-//   // glow
-//   &::before {
-//     content: "";
-//     background: linear-gradient(
-//       45deg,
-//       $violeta,
-//       $turquesa,
-//       $rosa,
-//       $turquesaClaro,
-//       $violetaOscuro,
-//       $turquesaClaro,
-//       $rosa,
-//       $turquesa
-//     );
-//     position: absolute;
-//     top: -2px;
-//     left: -2px;
-//     background-size: 600%;
-//     z-index: -1;
-//     width: calc(100% + 4px);
-//     height: calc(100% + 4px);
-//     filter: blur(8px);
-//     animation: glowing 20s linear infinite;
-//     transition: opacity 0.3s ease-in-out;
-//     border-radius: 10px;
-//     opacity: 0;
-//   }
+  // glow
+  &::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      $violeta,
+      $turquesa,
+      $rosa,
+      $turquesaClaro,
+      $violetaOscuro,
+      $turquesaClaro,
+      $rosa,
+      $turquesa
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+  }
 
-//   @keyframes glowing {
-//     0% {
-//       background-position: 0 0;
-//     }
+  @keyframes glowing {
+    0% {
+      background-position: 0 0;
+    }
 
-//     50% {
-//       background-position: 400% 0;
-//     }
+    50% {
+      background-position: 400% 0;
+    }
 
-//     100% {
-//       background-position: 0 0;
-//     }
-//   }
+    100% {
+      background-position: 0 0;
+    }
+  }
 
-//   // hover
-//   &:hover::before {
-//     opacity: 1;
-//   }
+  // hover
+  &:hover::before {
+    opacity: 1;
+  }
 
-//   &:active:after {
-//     background: transparent;
-//   }
+  &:active:after {
+    background: transparent;
+  }
 
-//   &:active {
-//     color: #000;
-//     font-weight: bold;
-//   }
-// }
+  &:active {
+    color: #000;
+    font-weight: bold;
+  }
+}
 
 /** 3º prueba de proyecto web **/
 .swiper-contenedor {
