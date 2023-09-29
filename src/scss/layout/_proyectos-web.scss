@@ -132,31 +132,32 @@
       -webkit-backface-visibility: hidden;
       border-radius: 5px;
       overflow: hidden;
+    }
 
-      .front, // prueba para safari
-      .back {
-        backface-visibility: hidden;
-        .front-content {
-          opacity: 0;
-          visibility: hidden;
-        }
-        &:hover {
-          .content {
-            transform: rotateY(180deg);
+    // prueba safari
+    .front,
+    .back {
+      /* Otros estilos */
 
-            .back {
-              opacity: 0;
-              visibility: hidden;
-            }
+      backface-visibility: hidden;
+    }
 
-            .front {
-              opacity: 1;
-              visibility: visible;
-            }
-          }
-        }
-      }
-    }  // fin prueba para safari
+    .carta:hover .content {
+      transform: rotateY(180deg);
+    }
+
+    .carta:hover .back {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .carta:hover .front {
+      transform: rotateY(0deg);
+    }
+
+    // fin prueba safari
+
+
 
     .back {
       width: 100%;
@@ -519,7 +520,7 @@
           font-weight: $delgada;
         }
         @include tablet {
-          .parrafo-web-4{
+          .parrafo-web-4 {
             width: 75%;
             padding: 0;
           }
@@ -528,7 +529,7 @@
           color: $violeta;
           font-size: 1.9rem;
           font-weight: 600;
-          margin:  0 0 0 0;
+          margin: 0 0 0 0;
         }
         .iconos-proyecto {
           display: flex;
