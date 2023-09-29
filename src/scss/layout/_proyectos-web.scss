@@ -93,14 +93,17 @@
 
 // 2da parte de muestra proyectos
 
+// prueba safari
 .web-2 {
   padding: 2rem;
+
   h2 {
     color: $violeta;
     font-weight: $bold;
     margin: 4rem;
     text-shadow: 3px 3px 35px $rosa;
   }
+
   .contenedor-web-2 {
     display: flex;
     flex-wrap: wrap;
@@ -122,8 +125,7 @@
     box-shadow: 0px 0px 10px 1px #000000ee;
     border-radius: 5px;
 
-    .front,
-    .back {
+    .front, .back {
       background-color: $violeta;
       position: absolute;
       width: 100%;
@@ -133,31 +135,6 @@
       border-radius: 5px;
       overflow: hidden;
     }
-
-    // prueba safari
-    .front,
-    .back {
-      /* Otros estilos */
-
-      backface-visibility: hidden;
-    }
-
-    .carta:hover .content {
-      transform: rotateY(180deg);
-    }
-
-    .carta:hover .back {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    .carta:hover .front {
-      transform: rotateY(0deg);
-    }
-
-    // fin prueba safari
-
-
 
     .back {
       width: 100%;
@@ -199,6 +176,7 @@
           width: 90%;
           border-radius: 5px;
         }
+
         h3 {
           font-size: 2rem;
           font-weight: 600;
@@ -257,7 +235,6 @@
       }
 
       .title {
-        // font-size: 11px;
         max-width: 100%;
         display: flex;
         flex-direction: column;
@@ -265,7 +242,7 @@
 
         p {
           width: 100%;
-          color: $blanco;
+          color: $gris;
           font-size: 1.3rem;
           font-weight: 300;
           margin: 0;
@@ -284,8 +261,7 @@
         flex-direction: row;
         justify-content: flex-start;
         gap: 1rem;
-        margin-top: 1.2rem;
-        // margin-top: 1rem;
+
         .icono-proyecto {
           width: 40px;
           height: auto;
@@ -345,7 +321,6 @@
   }
 }
 
-// boton ver mas
 .btn {
   margin-top: 1.2rem;
   padding: 0.28em 1em;
@@ -377,7 +352,6 @@
     border-radius: 10px;
   }
 
-  // glow
   &::before {
     content: "";
     background: linear-gradient(
@@ -419,7 +393,6 @@
     }
   }
 
-  // hover
   &:hover::before {
     opacity: 1;
   }
@@ -433,6 +406,322 @@
     font-weight: bold;
   }
 }
+// fin prueba safari
+
+// .web-2 {
+//   padding: 2rem;
+//   h2 {
+//     color: $violeta;
+//     font-weight: $bold;
+//     margin: 4rem;
+//     text-shadow: 3px 3px 35px $rosa;
+//   }
+//   .contenedor-web-2 {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     gap: 5rem;
+//   }
+// }
+
+// .carta {
+//   overflow: visible;
+//   width: 400px;
+//   height: 310px;
+
+//   .content {
+//     width: 100%;
+//     height: 100%;
+//     transform-style: preserve-3d;
+//     transition: transform 300ms;
+//     box-shadow: 0px 0px 10px 1px #000000ee;
+//     border-radius: 5px;
+
+//     .front,
+//     .back {
+//       background-color: $violeta;
+//       position: absolute;
+//       width: 100%;
+//       height: 100%;
+//       backface-visibility: hidden;
+//       -webkit-backface-visibility: hidden;
+//       border-radius: 5px;
+//       overflow: hidden;
+//     }
+
+//     .back {
+//       width: 100%;
+//       height: 100%;
+//       justify-content: center;
+//       display: flex;
+//       align-items: center;
+
+//       &::before {
+//         position: absolute;
+//         content: " ";
+//         display: block;
+//         width: 160px;
+//         height: 160%;
+//         background: linear-gradient(
+//           90deg,
+//           transparent,
+//           $turquesa,
+//           $turquesaClaro,
+//           $violeta,
+//           $violetaOscuro,
+//           transparent
+//         );
+//         animation: rotation_481 15s infinite linear;
+//       }
+
+//       .back-content {
+//         position: absolute;
+//         width: 99%;
+//         height: 99%;
+//         background-color: $grisOscuro;
+//         border-radius: 5px;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+
+//         img {
+//           width: 90%;
+//           border-radius: 5px;
+//         }
+//         h3 {
+//           font-size: 2rem;
+//           font-weight: 600;
+//           margin: 0;
+//           margin-top: 1rem;
+//           color: white;
+//         }
+//       }
+//     }
+//   }
+
+//   &:hover {
+//     .content {
+//       transform: rotateY(180deg);
+//     }
+//   }
+
+//   @keyframes rotation_481 {
+//     0% {
+//       transform: rotateZ(0deg);
+//     }
+
+//     100% {
+//       transform: rotateZ(360deg);
+//     }
+//   }
+
+//   .front {
+//     transform: rotateY(180deg);
+//     color: white;
+
+//     .front-content {
+//       position: absolute;
+//       width: 100%;
+//       height: 100%;
+//       padding: 10px;
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: space-around;
+
+//       .badge {
+//         padding: 2px 10px;
+//         border-radius: 10px;
+//         backdrop-filter: blur(2px);
+//         width: fit-content;
+//         font-size: 2.5rem;
+//         font-weight: $bold;
+//       }
+
+//       .description {
+//         box-shadow: 0px 0px 55px 5px #00000088;
+//         width: 100%;
+//         padding: 10px;
+//         backdrop-filter: blur(5px);
+//         border-radius: 5px;
+//       }
+
+//       .title {
+//         // font-size: 11px;
+//         max-width: 100%;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+
+//         p {
+//           width: 100%;
+//           color: $blanco;
+//           font-size: 1.3rem;
+//           font-weight: 300;
+//           margin: 0;
+//         }
+//       }
+
+//       .carta-footer {
+//         color: $turquesa;
+//         margin: 1.2rem 0 0 0;
+//         font-size: 1.8rem;
+//         font-weight: $bold;
+//       }
+
+//       .iconos-proyecto {
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: flex-start;
+//         gap: 1rem;
+//         margin-top: 1.2rem;
+//         .icono-proyecto {
+//           width: 40px;
+//           height: auto;
+//         }
+//       }
+//     }
+//   }
+
+//   .front .img {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//     object-position: center;
+//   }
+
+//   .circle {
+//     width: 90px;
+//     height: 90px;
+//     border-radius: 50%;
+//     background-color: $rosa;
+//     position: relative;
+//     filter: blur(15px);
+//     animation: floating 2600ms infinite linear;
+//   }
+
+//   #bottom {
+//     background-color: $violetaOscuro;
+//     left: 50px;
+//     top: 0px;
+//     width: 160px;
+//     height: 160px;
+//     animation-delay: -800ms;
+//   }
+
+//   #right {
+//     background-color: $turquesa;
+//     left: 160px;
+//     top: -80px;
+//     width: 40px;
+//     height: 40px;
+//     animation-delay: -1800ms;
+//   }
+
+//   @keyframes floating {
+//     0% {
+//       transform: translateY(0px);
+//     }
+
+//     50% {
+//       transform: translateY(10px);
+//     }
+
+//     100% {
+//       transform: translateY(0px);
+//     }
+//   }
+// }
+
+// // boton ver mas
+// .btn {
+//   margin-top: 1.2rem;
+//   padding: 0.28em 1em;
+//   border: none;
+//   outline: none;
+//   cursor: pointer;
+//   width: 100px;
+//   height: 35px;
+//   position: relative;
+//   z-index: 0;
+//   border-radius: 12px;
+
+//   a {
+//     color: #fff;
+//     font-family: inherit;
+//     font-weight: 500;
+//     font-size: 17px;
+//   }
+
+//   &::after {
+//     content: "";
+//     z-index: -1;
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     background-color: $violetaOscuro;
+//     left: 0;
+//     top: 0;
+//     border-radius: 10px;
+//   }
+
+//   // glow
+//   &::before {
+//     content: "";
+//     background: linear-gradient(
+//       45deg,
+//       $violeta,
+//       $turquesa,
+//       $rosa,
+//       $turquesaClaro,
+//       $violetaOscuro,
+//       $turquesaClaro,
+//       $rosa,
+//       $turquesa
+//     );
+//     position: absolute;
+//     top: -2px;
+//     left: -2px;
+//     background-size: 600%;
+//     z-index: -1;
+//     width: calc(100% + 4px);
+//     height: calc(100% + 4px);
+//     filter: blur(8px);
+//     animation: glowing 20s linear infinite;
+//     transition: opacity 0.3s ease-in-out;
+//     border-radius: 10px;
+//     opacity: 0;
+//   }
+
+//   @keyframes glowing {
+//     0% {
+//       background-position: 0 0;
+//     }
+
+//     50% {
+//       background-position: 400% 0;
+//     }
+
+//     100% {
+//       background-position: 0 0;
+//     }
+//   }
+
+//   // hover
+//   &:hover::before {
+//     opacity: 1;
+//   }
+
+//   &:active:after {
+//     background: transparent;
+//   }
+
+//   &:active {
+//     color: #000;
+//     font-weight: bold;
+//   }
+// }
 
 /** 3º prueba de proyecto web **/
 .swiper-contenedor {
