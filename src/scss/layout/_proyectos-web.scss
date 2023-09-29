@@ -194,7 +194,7 @@
     }
 
     .back .back-content img {
-      display: none; /* Oculta la imagen al hacer hover */
+      display: none; 
     }
   }
 
@@ -231,7 +231,9 @@
       }
 
       .description {
-        box-shadow: 0px 0px 55px 5px #00000088;
+        box-shadow: 0px 0px 55px 2px #00000088;
+        background-color: rgba(251, 251, 251, 0.02);
+        backdrop-filter: blur(5px);
         width: 100%;
         padding: 10px;
         backdrop-filter: blur(5px);
@@ -325,7 +327,7 @@
     }
   }
 }
-
+// corregi animation y blur(5px)
 // fin prueba safari
 
 // .web-2 {
