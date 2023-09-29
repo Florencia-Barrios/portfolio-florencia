@@ -76,7 +76,8 @@
         <div class="sobre-mi">
             <h1>Hola ! soy<br><span class="hola">Florencia Barrios </span></h1>
             <h2>Desarrolladora Front End JR</h2>
-            <p>Una apasionada desarrolladora junior en búsqueda de desafíos emocionantes para crecer y aprender en este fascinante mundo digital.</p>
+            <p>Una apasionada desarrolladora junior en búsqueda de desafíos emocionantes para crecer y aprender en este
+                fascinante mundo digital.</p>
             <button class="btn-space space">
                 <a href="#sobre-mi">Más sobre mí</a>
             </button>
@@ -87,9 +88,15 @@
         <div class="contenedor-informacion">
             <div class="contenedor texto-informacion">
                 <h1>Sobre mí</h1>
-                <p>Soy una entusiasta estudiante de Desarrollo Front-End con conocimientos en HTML, CSS y Sass. Actualmente, estoy inmersa en el aprendizaje de JavaScript, PHP y bases de datos, ansiosa por expandir mi conjunto de habilidades.</p>
-                <p>Me considero una persona proactiva, adaptable y tengo buena predisposición para trabajar en equipo. Mi experiencia previa en atención al cliente me ha brindado la habilidad de entender las necesidades de las personas y ofrecer soluciones efectivas.</p>
-                <p>Mi objetivo es crecer como profesional en Desarrollo Front-End, contribuyendo con mi creatividad y habilidades para diseñar experiencias web excepcionales que impacten positivamente a los usuarios.</p>
+                <p>Soy una entusiasta estudiante de Desarrollo Front-End con conocimientos en HTML, CSS y Sass.
+                    Actualmente, estoy inmersa en el aprendizaje de JavaScript, PHP y bases de datos, ansiosa por
+                    expandir mi conjunto de habilidades.</p>
+                <p>Me considero una persona proactiva, adaptable y tengo buena predisposición para trabajar en equipo.
+                    Mi experiencia previa en atención al cliente me ha brindado la habilidad de entender las necesidades
+                    de las personas y ofrecer soluciones efectivas.</p>
+                <p>Mi objetivo es crecer como profesional en Desarrollo Front-End, contribuyendo con mi creatividad y
+                    habilidades para diseñar experiencias web excepcionales que impacten positivamente a los usuarios.
+                </p>
 
             </div>
             <div class="imagen-dibujo">
@@ -254,7 +261,8 @@
                             <div class="description">
                                 <div class="title">
                                     <p class="parrafo-title">
-                                        <strong>Proyecto de bienes raíces, compra y venta de propiedades. Proximamente con un apartado de admin con CRUD, contiene base de datos.</strong>
+                                        <strong>Proyecto de bienes raíces, compra y venta de propiedades. Proximamente
+                                            con un apartado de admin con CRUD, contiene base de datos.</strong>
                                     </p>
                                 </div>
                                 <p class="carta-footer">Tecnologías</p>
@@ -302,7 +310,8 @@
                             <div class="description">
                                 <div class="title">
                                     <p class="parrafo-title">
-                                        <strong>Proyecto de festival de música, incluye una galería de fotos hecha con JavaScript.</strong>
+                                        <strong>Proyecto de festival de música, incluye una galería de fotos hecha con
+                                            JavaScript.</strong>
                                     </p>
                                 </div>
                                 <p class="carta-footer">Tecnologías</p>
@@ -351,7 +360,8 @@
                             <div class="description">
                                 <div class="title">
                                     <p class="parrafo-title">
-                                        <strong>Proyecto de un blog referente al mundo del café, realizado con HTML y CSS</strong>
+                                        <strong>Proyecto de un blog referente al mundo del café, realizado con HTML y
+                                            CSS</strong>
                                     </p>
                                 </div>
                                 <p class="carta-footer">Tecnologías</p>
@@ -394,7 +404,8 @@
                             <div class="description">
                                 <div class="title">
                                     <p class="parrafo-title">
-                                        <strong>Proyecto de una tienda web de remeras con diseños relacionados a programación.</strong>
+                                        <strong>Proyecto de una tienda web de remeras con diseños relacionados a
+                                            programación.</strong>
                                     </p>
                                 </div>
                                 <p class="carta-footer">Tecnologías</p>
@@ -723,7 +734,8 @@
             <div class="disponible">
                 <h3>Freelance</h3>
                 <h3 class="letra-disponible">Disponible</h3>
-                <p>La colaboración es la clave para el éxito. Si tienes una idea o proyecto en mente, o simplemente deseas establecer una conexión profesional, no dudes en ponerte en contacto conmigo.</p>
+                <p>La colaboración es la clave para el éxito. Si tienes una idea o proyecto en mente, o simplemente
+                    deseas establecer una conexión profesional, no dudes en ponerte en contacto conmigo.</p>
             </div>
 
             <div class="contactame">
@@ -757,7 +769,21 @@
 
     <script src="./build/js/bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- script muestra de proyecto -->
+    <script>
+        const cartas = document.querySelectorAll('.carta');
 
+        cartas.forEach(carta => {
+            carta.addEventListener('mouseenter', () => {
+                carta.classList.add('hover');
+            });
+
+            carta.addEventListener('mouseleave', () => {
+                carta.classList.remove('hover');
+            });
+        });
+
+    </script>
 
 </body>
 

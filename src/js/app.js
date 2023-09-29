@@ -119,17 +119,17 @@ window.addEventListener("focus", () => {
 
 
 // Prueba  Proyecto rotacion tarjeta
-const cartas = document.querySelectorAll('.carta');
+// const cartas = document.querySelectorAll('.carta');
 
-cartas.forEach(carta => {
-  carta.addEventListener('mouseenter', () => {
-    carta.classList.add('hover');
-  });
+// cartas.forEach(carta => {
+//   carta.addEventListener('mouseenter', () => {
+//     carta.classList.add('hover');
+//   });
 
-  carta.addEventListener('mouseleave', () => {
-    carta.classList.remove('hover');
-  });
-});
+//   carta.addEventListener('mouseleave', () => {
+//     carta.classList.remove('hover');
+//   });
+// });
 
 
 
