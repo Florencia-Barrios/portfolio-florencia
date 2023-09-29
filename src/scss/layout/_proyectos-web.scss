@@ -157,7 +157,8 @@
           $violetaOscuro,
           transparent
         );
-        animation: rotation_481 15s infinite linear;
+        // animation: rotation_481 15s infinite linear;
+        animation: rotation_481 15s ease;
       }
 
       .back-content {
