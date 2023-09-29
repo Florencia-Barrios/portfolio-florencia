@@ -94,23 +94,7 @@
 // 2da parte de muestra proyectos
 
 // prueba safari
-.carta {
-  .hover .content {
-    transform: rotateY(180deg);
-  }
 
-  .hover .front {
-    transform: rotateY(180deg);
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .hover .back {
-    transform: rotateY(0deg);
-    opacity: 0;
-    visibility: hidden;
-  }
-}
 .web-2 {
   padding: 2rem;
 
@@ -225,6 +209,10 @@
   .front {
     transform: rotateY(180deg);
     color: white;
+
+    &:hover{
+      backface-visibility: visible;
+    }
 
     .front-content {
       position: absolute;
