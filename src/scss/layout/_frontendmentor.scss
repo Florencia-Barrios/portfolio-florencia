@@ -46,11 +46,12 @@
         position: absolute;
         top: 0;
         left: 0;
+        width: 100%;
+        max-width: 392px;
+        height: 222px;
         background-color: $blanco;
         padding: 10px;
         display: none;
-        max-width: 392px;
-        height: 222px;
         transition: opacity 1s;
         text-align: center;
 
@@ -116,4 +117,3 @@
     }
   }
 }
-
