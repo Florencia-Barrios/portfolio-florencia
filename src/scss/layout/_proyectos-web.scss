@@ -10,15 +10,17 @@
     font-family: $fuente_principal;
     font-weight: 600;
     margin: 2rem;
+    text-align: center;
     // text-shadow: 3px 3px 35px $rosa;
   }
 
-  p{
+  p {
     text-align: center;
     margin: 2rem 0;
+    font-size: 2rem;
   }
-  @include tablet{
-    p{
+  @include tablet {
+    p {
       margin: 3rem;
       text-align: center;
     }
@@ -114,7 +116,7 @@
     }
 
     .back .back-content img {
-      display: none; 
+      display: none;
     }
   }
 
@@ -141,7 +143,7 @@
       flex-direction: column;
       justify-content: space-around;
 
-      &:hover{
+      &:hover {
         position: absolute;
         overflow: hidden;
       }
@@ -229,7 +231,7 @@
     top: 0px;
     width: 160px;
     height: 160px;
-    // animation-delay: -800ms; 
+    // animation-delay: -800ms;
     // animation-delay: -1s; agregado ultimo
   }
 

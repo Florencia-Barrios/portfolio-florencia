@@ -7,10 +7,12 @@
     font-family: $fuente_principal;
     font-weight: 600;
     color: $violeta;
+    text-align: center;
   }
   p {
     text-align: center;
     margin: 2rem 0;
+    font-size: 2rem;
   }
   @include tablet {
     p {
