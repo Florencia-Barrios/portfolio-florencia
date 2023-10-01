@@ -2,15 +2,6 @@
   .contenedor-informacion {
     @include grid(2, 4rem);
   }
-
-  // .imagen-dibujo {
-  //   width: 70%;
-  //   overflow: hidden;
-  //   padding: 0;
-  //   picture {
-  //     width: 500px;
-  //   }
-  // }
 }
 
 @include tablet {
@@ -50,7 +41,6 @@
   .contenedor-informacion {
     //sombrita gris
     background-color: rgba(255, 255, 255, 0.3);
-    // width: 100%;
     max-width: 1400px;
     padding: 2rem 1rem 2rem 1rem;
   
@@ -74,6 +64,7 @@
   p {
     color: $grisOscuro;
     margin: 0.8rem;
+    font-size: 2rem;
   }
 }
 

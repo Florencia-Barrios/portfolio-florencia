@@ -8,6 +8,16 @@
     font-weight: 600;
     color: $violeta;
   }
+  p{
+    text-align: center;
+    margin: 2rem 0;
+  }
+  @include tablet{
+    p{
+      margin: 3rem;
+      text-align: center;
+    }
+  }
 
   .contenedor-web-4 {
     display: flex;

@@ -12,7 +12,7 @@
         content: url("../img/logopro-blanco.png");
       }
       a {
-        color: $turquesaClaro;
+        color: $turquesa;
       }
       @include tablet {
         padding-bottom: 0;
@@ -21,9 +21,9 @@
 
     .boton-nav {
       &:hover {
-        color: $violeta;
+        color: $violetaClaro;
         font-weight: $bold;
-        text-shadow: 2px 2px 11px rgba(139, 10, 139, 0.5);
+        // text-shadow: 2px 2px 11px rgba(139, 10, 139, 0.5);
       }
     }
   }
@@ -119,6 +119,9 @@
     h2 {
       color: $turquesa;
     }
+    p{
+      color: $gris;
+    }
     .carta {
       .content {
         .front,
@@ -147,6 +150,9 @@
   .web-4 {
     h2 {
       color: $turquesa;
+    }
+    p{
+      color: $gris;
     }
   
     .contenedor-web-4 {
