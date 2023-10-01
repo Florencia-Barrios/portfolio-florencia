@@ -30,12 +30,6 @@
 
   /** Resumen sobre mí **/
   .resumen-flor {
-    // .imagen-flor {
-    //   picture img {
-    //     content: url(../../../build/img/imagen-perfil-1.png);
-    //   }
-    // }
-
     .sobre-mi {
       h1,
       p {
@@ -121,7 +115,6 @@
   }
 
   /** Proyectos Web **/
-  // Proyectos nº2
   .web-2 {
     h2 {
       color: $turquesa;
@@ -149,6 +142,55 @@
       }
     }
   }
+
+  /** Ejercicios de Front End Mentor **/
+  .web-4 {
+    h2 {
+      color: $turquesa;
+    }
+  
+    .contenedor-web-4 {
+
+      /* Estilos base para cada proyecto */
+      .porfolios-web-4 {
+
+        .informacion-web-4 {
+          background-color: $grisOscuro;
+          h3 {
+            color: $turquesa;
+          }
+          .parrafo-web-4 {
+            color: $blanco;
+          }
+  
+          .web-tecno {
+            color: $gris;
+          }
+  
+          .button {
+            background-color: #3af9e0;
+            border: 2px solid #3af9e0;
+            .boton-web {
+              color: $grisOscuro;
+            }
+          }
+          .button:hover {
+            background-color: $turquesa;
+            border: 2px solid $turquesa;
+            .boton-web {
+              color: $negro
+            }
+          }
+        }
+      }
+  
+      .porfolios-web-4:hover .informacion-web-4 {
+        border: 1px solid $turquesa;
+      }
+    }
+  }
+
+
 
   /** Footer - Copyright **/
   footer {
