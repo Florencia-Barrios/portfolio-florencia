@@ -3,44 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
   eventListeners();
   navegacionFija();
   scrollNav();
-  swiper();
 
 });
-
-// 3º prueba de proyecto web
-function swiper() {
-  const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: "horizontal",
-    loop: true,
-    allowTouchMove: true,
-    effect: "fade",
-    autoplay: {
-      delay: 2000,
-      pauseOnMouseEnter: true,
-      disableOnInteraction: false,
-    },
-
-    // If we need pagination
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicBullets: true,
-    },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-
-    // // And if we need scrollbar
-    // scrollbar: {
-    //   el: ".swiper-scrollbar",
-    //   draggable: true,
-    // },
-  });
-}
 
 // Boton DARK-MODE
 function darkMode() {
@@ -116,20 +80,6 @@ window.addEventListener("blur", () => {
 window.addEventListener("focus", () => {
   document.title = docTitle;
 });
-
-
-// Prueba  Proyecto rotacion tarjeta
-// const cartas = document.querySelectorAll('.carta');
-
-// cartas.forEach(carta => {
-//   carta.addEventListener('mouseenter', () => {
-//     carta.classList.add('hover');
-//   });
-
-//   carta.addEventListener('mouseleave', () => {
-//     carta.classList.remove('hover');
-//   });
-// });
 
 
 

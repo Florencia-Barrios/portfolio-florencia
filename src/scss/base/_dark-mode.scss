@@ -123,32 +123,33 @@
   }
 
   /** Proyectos Web **/
-  .proyectos-web {
-    $color1: rgb(16, 116, 113);
-    $color2: rgba(16, 116, 113, 1);
-    $color3: rgba(112, 31, 83, 1);
-    $color4: rgba(64, 32, 117, 1);
+  // Proyectos nº2
+  .web-2 {
+    h2 {
+      color: $turquesa;
+      font-weight: $bold;
+      text-shadow: 3px 3px 35px $gris;
+    }
+    .carta {
+      .content {
+        .front,
+        .back {
+          background-color: #151515;
+          .description {
+            box-shadow: 0px 0px 10px 5px #00000088;
+            background-color: #00000099;
+          }
+        }
+        .back-content {
+          background-color: #151515;
+        }
+      }
+    }
 
-    background: $color1;
-    background: -moz-linear-gradient(
-      90deg,
-      $color2 0%,
-      $color3 51%,
-      $color4 100%
-    );
-    background: -webkit-linear-gradient(
-      90deg,
-      $color2 0%,
-      $color3 51%,
-      $color4 100%
-    );
-    background: linear-gradient(90deg, $color2 0%, $color3 51%, $color4 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#107471", endColorstr="#402075", GradientType=1);
-    padding: 2rem;
-    .contenedor-portfolios {
-      background-color: rgba(88, 91, 90, 0.4);
-      h4 {
-        color: $turquesa;
+    // boton
+    .btn {
+      &::after {
+        background-color: rgb(46, 46, 46);
       }
     }
   }
@@ -190,106 +191,4 @@
     }
   }
 
-  // Proyectos nº2
-  .web-2 {
-    h2 {
-      color: $turquesa;
-      font-weight: $bold;
-      text-shadow: 3px 3px 35px $gris;
-    }
-    .carta {
-      .content {
-        .front,
-        .back {
-          background-color: #151515;
-          .description {
-            box-shadow: 0px 0px 10px 5px #00000088;
-            background-color: #00000099;
-          }
-        }
-        .back-content {
-          background-color: #151515;
-        }
-      }
-    }
-
-    // boton
-    .btn {
-      &::after {
-        background-color: rgb(46, 46, 46);
-      }
-    }
-  }
-
-  /** 3º prueba proyecto web **/
-
-  .swiper-contenedor {
-    h3 {
-      color: $turquesa;
-      font-weight: $bold;
-      text-shadow: 3px 3px 35px $gris;
-    }
-    .swiper {
-      .swiper-button-prev,
-      .swiper-button-next {
-        color: $turquesa;
-      }
-    }
-  }
-
-  /** 4° prueba proyectos **/
-  .web-4 {
-    h2 {
-      color: $turquesa;
-      text-shadow: 2px 4px 7px $violeta;
-    }
-    .contenedor-web-4 {
-      .porfolios-web-4 {
-        .informacion-web-4 {
-          background-color: $grisOscuro;
-
-          h3,
-          .web-tecno {
-            color: $turquesa;
-          }
-          p {
-            color: $gris;
-          }
-
-          .button {
-            background-color: $grisOscuro;
-            border: 2px solid $turquesa;
-            .boton-web {
-              color: $blanco;
-            }
-          }
-          .button:hover {
-            background-color: $turquesa;
-            .boton-web {
-              color: $negro;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  /* 5º prueba de muestra de proyectos   */
-  .quinta-muestra {
-    h2 {
-      color: $turquesa;
-      text-shadow: 2px 4px 7px $violeta;
-    }
-    .galeria-proyecto-2 {
-      .info-2 {
-        background-color: rgba(0, 0, 0, 0.8);
-        color: white;
-      }
-      .btn-2 {
-        &::after {
-          background-color: $negro;
-        }
-      }
-    }
-  }
 } // fin dark mode
