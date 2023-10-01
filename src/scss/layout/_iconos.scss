@@ -20,8 +20,10 @@
   margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
-  h4 {
+  h2 {
     font-size: 4rem;
+    font-family: $fuente_principal;
+    font-weight: 600;
     color: $violeta;
   }
 
