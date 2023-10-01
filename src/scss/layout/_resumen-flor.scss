@@ -73,6 +73,7 @@
   border-radius: 10px;
   margin-top: 2rem;
   cursor: pointer;
+  display: inline-block;
 
   &:hover {
     background-position: right center;
@@ -85,21 +86,33 @@
     font-weight: bold;
     font-size: 2rem;
     text-align: center;
+    text-decoration: none;
     &:hover {
       color: rgb(255, 255, 255);
     }
   }
 }
 
+// .space {
+//   background-image: -webkit-gradient(
+//     linear,
+//     left top,
+//     right top,
+//     from(#743ad5),
+//     color-stop(51%, #d53a9d),
+//     to(#743ad5)
+//   );
+//   background-image: linear-gradient(
+//     to right,
+//     #743ad5 0%,
+//     #d53a9d 51%,
+//     #743ad5 100%
+//   );
+//   border-image-source: linear-gradient(45deg, #743ad5, #d53a9d);
+//   border-image-outset: 1em;
+// }
+
 .space {
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#743ad5),
-    color-stop(51%, #d53a9d),
-    to(#743ad5)
-  );
   background-image: linear-gradient(
     to right,
     #743ad5 0%,
