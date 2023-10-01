@@ -8,12 +8,12 @@
     font-weight: 600;
     color: $violeta;
   }
-  p{
+  p {
     text-align: center;
     margin: 2rem 0;
   }
-  @include tablet{
-    p{
+  @include tablet {
+    p {
       margin: 3rem;
       text-align: center;
     }
@@ -29,16 +29,16 @@
     /* Estilos base para cada proyecto */
     .porfolios-web-4 {
       position: relative;
-      width: 392px;
+      max-width: 392px;
       height: 222px;
       margin: 10px;
       overflow: hidden;
+
       .imagen-web-4 {
-        width: 392px;
+        max-width: 392px;
         height: 222px;
         img {
-          // width: 100%;
-          width: 392px;
+          max-width: 392px;
           height: 222px;
         }
       }
@@ -49,9 +49,7 @@
         background-color: $blanco;
         padding: 10px;
         display: none;
-        //   width: 100%;
-        //   height: 100%;
-        width: 392px;
+        max-width: 392px;
         height: 222px;
         transition: opacity 1s;
         text-align: center;
@@ -118,3 +116,4 @@
     }
   }
 }
+
