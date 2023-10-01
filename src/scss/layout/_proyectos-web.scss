@@ -9,8 +9,19 @@
     font-size: 4rem;
     font-family: $fuente_principal;
     font-weight: 600;
-    margin: 4rem;
+    margin: 2rem;
     // text-shadow: 3px 3px 35px $rosa;
+  }
+
+  p{
+    text-align: center;
+    margin: 2rem 0;
+  }
+  @include tablet{
+    p{
+      margin: 3rem;
+      text-align: center;
+    }
   }
 
   .contenedor-web-2 {

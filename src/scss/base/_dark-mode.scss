@@ -12,7 +12,7 @@
         content: url("../img/logopro-blanco.png");
       }
       a {
-        color: $turquesaClaro;
+        color: $turquesa;
       }
       @include tablet {
         padding-bottom: 0;
@@ -21,21 +21,15 @@
 
     .boton-nav {
       &:hover {
-        color: $violeta;
+        color: $violetaClaro;
         font-weight: $bold;
-        text-shadow: 2px 2px 11px rgba(139, 10, 139, 0.5);
+        // text-shadow: 2px 2px 11px rgba(139, 10, 139, 0.5);
       }
     }
   }
 
   /** Resumen sobre mí **/
   .resumen-flor {
-    // .imagen-flor {
-    //   picture img {
-    //     content: url(../../../build/img/imagen-perfil-1.png);
-    //   }
-    // }
-
     .sobre-mi {
       h1,
       p {
@@ -121,10 +115,12 @@
   }
 
   /** Proyectos Web **/
-  // Proyectos nº2
   .web-2 {
     h2 {
       color: $turquesa;
+    }
+    p{
+      color: $gris;
     }
     .carta {
       .content {
@@ -149,6 +145,58 @@
       }
     }
   }
+
+  /** Ejercicios de Front End Mentor **/
+  .web-4 {
+    h2 {
+      color: $turquesa;
+    }
+    p{
+      color: $gris;
+    }
+  
+    .contenedor-web-4 {
+
+      /* Estilos base para cada proyecto */
+      .porfolios-web-4 {
+
+        .informacion-web-4 {
+          background-color: $grisOscuro;
+          h3 {
+            color: $turquesa;
+          }
+          .parrafo-web-4 {
+            color: $blanco;
+          }
+  
+          .web-tecno {
+            color: $gris;
+          }
+  
+          .button {
+            background-color: #3af9e0;
+            border: 2px solid #3af9e0;
+            .boton-web {
+              color: $grisOscuro;
+            }
+          }
+          .button:hover {
+            background-color: $turquesa;
+            border: 2px solid $turquesa;
+            .boton-web {
+              color: $negro
+            }
+          }
+        }
+      }
+  
+      .porfolios-web-4:hover .informacion-web-4 {
+        border: 1px solid $turquesa;
+      }
+    }
+  }
+
+
 
   /** Footer - Copyright **/
   footer {
